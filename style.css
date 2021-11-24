@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 900;
+    color: #000;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section.modulo p {
+    margin-bottom: 40px;
+}
+
+section.modulo:last-child{
+    margin-bottom: 0;
+}
+
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.modulo .conteudo{
+   padding: 40px 0;
+   background: #ece7d5;
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.modulo.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -webkit- linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: -o-linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+section.modulo.parallax-1{
+    background-image: url(https://desviantes.blob.core.windows.net/desviantes/media/blog/posts/ff452d8291abdfc490e241cd2d35e820.jpg);
+}
+
+section.modulo.parallax-2{
+    background-image: url(https://uploads.metropoles.com/wp-content/uploads/2021/06/03121734/praias-da-bahia.jpg);
+}
+
+section.modulo.parallax-3{
+    background-image: url(https://st2.depositphotos.com/1154952/5310/i/600/depositphotos_53106465-stock-photo-beautiful-morning-light-in-public.jpg);
+}
+
+section.modulo.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+}
